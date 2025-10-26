@@ -15,8 +15,8 @@ Here, we present the entries, code and results of the eDNA data analyis challeng
 ## Goal
 
 1. :floppy_disk:  We provide the eDNA datasets along with standardised reference libraries
-    - An 18S plankton time series [described here](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/)
-    -  12S/16S/COI aquarium samples [described here](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/)
+    - The 18S plankton time series [described here](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#plankton-18s-time-series)
+    -  The 12S/16S/COI aquarium samples [described here](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#fish-12s16scoi-aquarium-dataset)
 
 2. :wrench:  Participants come with their preferred pipeline
 3. :computer:  They run the pipeline on one or more of our plankton or fish eDNA datasets
@@ -63,7 +63,7 @@ For the fish 12S, 16S and COI entries:
 
  ## Report
 
- *Here, we share some insights of the results, and/or link to the online deliverables.*
+*Here, we share some insights of the results, and/or link to the online deliverables.*
 
  ## Acknowledgements
 
