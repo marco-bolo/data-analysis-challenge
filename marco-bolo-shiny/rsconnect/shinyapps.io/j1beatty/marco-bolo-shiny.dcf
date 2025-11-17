@@ -1,0 +1,12 @@
+name: marco-bolo-shiny
+title: marco-bolo-shiny
+username: j1beatty
+account: j1beatty
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15846083
+bundleId: 11074093
+url: https://j1beatty.shinyapps.io/marco-bolo-shiny/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE
