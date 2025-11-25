@@ -1,0 +1,10 @@
+"submissionID","submitterID","marker","referenceDB","pipeline","error_rate_tool","ASV.OTU","tax_assign_cat","otu_seq_comp_appr","tax_class_id_cutoff","tax_class_evalue","tax_class_query_cutoff","tax_class_collapse","screen_other","screen_explanation"
+"submitter66_18S_PR2v500_pipeline13","submitter66","18S","PR2v500","pipeline13","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter37_18S_PR2v5_pipeline76","submitter37","18S","PR2v5","pipeline76","vsearch","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter45_18S_PR2v5_pipeline36","submitter45","18S","PR2v5","pipeline36","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter60_18S_PR2v5_pipeline26","submitter60","18S","PR2v5","pipeline26",NA,"OTU",NA,NA,NA,NA,NA,"LCA",NA,NA
+"submitter17_18S_PR2v501_pipeline65","submitter17","18S","PR2v501","pipeline65","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter17_18S_PR2v501_pipeline23","submitter17","18S","PR2v501","pipeline23",NA,"ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter32_18S_PR2v5_pipeline59","submitter32","18S","PR2v5","pipeline59","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter29_18S_PR2v5_pipeline10","submitter29","18S","PR2v5","pipeline10","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
+"submitter11_18S_NA_pipeline77","submitter11","18S",NA,"pipeline77","vsearch","OTU",NA,NA,NA,NA,NA,"",NA,NA
