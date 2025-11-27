@@ -1,10 +1,10 @@
 "submissionID","submitterID","marker","referenceDB","pipeline","error_rate_tool","ASV.OTU","tax_assign_cat","otu_seq_comp_appr","tax_class_id_cutoff","tax_class_evalue","tax_class_query_cutoff","tax_class_collapse","screen_other","screen_explanation"
-"submitter66_18S_PR2v500_pipeline13","submitter66","18S","PR2v500","pipeline13","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter37_18S_PR2v5_pipeline76","submitter37","18S","PR2v5","pipeline76","vsearch","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter45_18S_PR2v5_pipeline36","submitter45","18S","PR2v5","pipeline36","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter60_18S_PR2v5_pipeline26","submitter60","18S","PR2v5","pipeline26",NA,"OTU",NA,NA,NA,NA,NA,"LCA",NA,NA
-"submitter17_18S_PR2v501_pipeline65","submitter17","18S","PR2v501","pipeline65","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter17_18S_PR2v501_pipeline23","submitter17","18S","PR2v501","pipeline23",NA,"ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter32_18S_PR2v5_pipeline59","submitter32","18S","PR2v5","pipeline59","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter29_18S_PR2v5_pipeline10","submitter29","18S","PR2v5","pipeline10","dada2","ASV",NA,NA,NA,NA,NA,"",NA,NA
-"submitter11_18S_NA_pipeline77","submitter11","18S",NA,"pipeline77","vsearch","OTU",NA,NA,NA,NA,NA,"",NA,NA
+"submitter66_18S_PR2v500_cascabel","submitter66","18S","PR2v500","cascabel","dada2","ASV","sequence composition","dada2",0.7,NA,NA,NA,NA,NA
+"submitter37_18S_PR2v5_ApscaleModified","submitter37","18S","PR2v5","ApscaleModified","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA,NA
+"submitter45_18S_PR2v5_QIIME2","submitter45","18S","PR2v5","QIIME2","dada2","ASV","sequence composition","qiime",0.7,NA,NA,NA,NA,NA
+"submitter60_18S_PR2v5_LotuS2UPARSE","submitter60","18S","PR2v5","LotuS2UPARSE",NA,"OTU","sequence similarity","lambda",97,NA,NA,"LCA",NA,NA
+"submitter17_18S_PR2v501_frogsDada2","submitter17","18S","PR2v501","frogsDada2","dada2","ASV","sequence similarity","blastn",NA,NA,NA,"Multi-affiliation",NA,NA
+"submitter17_18S_PR2v501_frogsSwarm","submitter17","18S","PR2v501","frogsSwarm",NA,"ASV","sequence similarity","blastn",NA,NA,"nA","Multi-affiliation",NA,NA
+"submitter32_18S_PR2v5_SAMBA","submitter32","18S","PR2v5","SAMBA","dada2","ASV","sequence composition","IDTAXA",0.5,NA,NA,NA,NA,NA
+"submitter29_18S_PR2v5_SLIM","submitter29","18S","PR2v5","SLIM","dada2","OTU","sequence similarity","Vsearch",90,NA,NA,"LULU",NA,NA
+"submitter11_18S_NA_APSCALE","submitter11","18S",NA,"APSCALE","vsearch","OTU",NA,NA,NA,NA,NA,NA,NA,NA
