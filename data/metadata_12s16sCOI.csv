@@ -1,102 +1,102 @@
-"submissionID","marker","referenceDB","referenceDB_simplified","error_rate_tool","ASV.OTU","tax_assign_cat","otu_seq_comp_appr","tax_class_id_cutoff","tax_class_evalue","tax_class_query_cutoff","tax_class_collapse","screen_other","screen_explanation","submitterID_anon","pipeline_anon"
-"submitter66_12S_12SAllFishDez2023_pipeline13","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES","Filtering method using ASV read counts/proportions in control samples as described here https://www.sciencedirect.com/science/article/pii/S0048969724058133","submitter66","pipeline13"
-"submitter66_16S_16SAllFishDez2023_pipeline13","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES","Filtering method using ASV read counts/proportions in control samples as described here https://www.sciencedirect.com/science/article/pii/S0048969724058133","submitter66","pipeline13"
-"submitter66_COI_COIMetazoa_pipeline13","COI","COIMetazoa","COIMetazoa","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES","Filtering method using ASV read counts/proportions in control samples as described here https://www.sciencedirect.com/science/article/pii/S0048969724058133","submitter66","pipeline13"
-"submitter66_COI_COIAllFishDez2023_pipeline13","COI","COIAllFishDez2023","COIAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES","Filtering method using ASV read counts/proportions in control samples as described here https://www.sciencedirect.com/science/article/pii/S0048969724058133","submitter66","pipeline13"
-"submitter37_12S_12SAllFishDez2023_pipeline76","12S","12SAllFishDez2023","12SAllFishDez2023","other","OTU","sequence similarity","vsearch",80,NA,NA,"LCA","YES","Remove singletons n=5 (abundance)","submitter37","pipeline76"
-"submitter37_16S_16SAllFishDez2023_pipeline76","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence composition","dada2",0.6,NA,NA,NA,"YES","Remove singletons n=5 (abundance); s=2 (number of samples)","submitter37","pipeline76"
-"submitter45_12S_12SAllFishDez2023_pipeline36","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES","ASV table correction for tagjumping, min reads, contaminants, high contaminant samples","submitter45","pipeline36"
-"submitter45_COI_COIAllFishDez2023_pipeline36","COI","COIAllFishDez2023","COIAllFishDez2023","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES","ASV table correction for tagjumping, min reads, contaminants, high contaminant samples","submitter45","pipeline36"
-"submitter45_16S_NCBI_pipeline36","16S","NCBI","NCBI","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES","ASV table correction for tagjumping, min reads, contaminants, high contaminant samples","submitter45","pipeline36"
-"submitter60_12S_12SAllFishDez2023_pipeline26","12S","12SAllFishDez2023","12SAllFishDez2023","fastp","OTU","sequence similarity","ecotag",NA,NA,NA,NA,NA,NA,"submitter60","pipeline26"
-"submitter60_16S_16SAllFishDez2023_pipeline26","16S","16SAllFishDez2023","16SAllFishDez2023","fastp","OTU","sequence similarity","ecotag",NA,NA,NA,NA,NA,NA,"submitter60","pipeline26"
-"submitter17_12S_12SAllFishDez2023_pipeline65","12S","12SAllFishDez2023","12SAllFishDez2023","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA,NA,"submitter17","pipeline65"
-"submitter17_COI_BOLD_pipeline65","COI","BOLD","BOLD","DnoisE","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA,NA,"submitter17","pipeline65"
-"submitter17_16S_16SAllFishDez2023_pipeline65","16S","16SAllFishDez2023","16SAllFishDez2023","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA,NA,"submitter17","pipeline65"
-"submitter17_12S_12SAllFishDez2023MIDORI2_pipeline65","12S","12SAllFishDez2023MIDORI2","12SAllFishDez2023MIDORI2","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA,NA,"submitter17","pipeline65"
-"submitter32_12S_12SAllFishDez2023_pipeline23","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA,NA,"submitter32","pipeline23"
-"submitter32_16S_16SAllFishDez2023_pipeline23","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA,NA,"submitter32","pipeline23"
-"submitter32_COI_COIAllFishDez2023_pipeline23","COI","COIAllFishDez2023","COIAllFishDez2023","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA,NA,"submitter32","pipeline23"
-"submitter29_COI_COIAllFishDez2023_pipeline59","COI","COIAllFishDez2023","COIAllFishDez2023","dada2","ASV","sequence similarity","blastn",97,NA,95,NA,NA,NA,"submitter29","pipeline59"
-"submitter29_12S_12SAllFishDez2023_pipeline59","12S","12SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence similarity","blastn",97,NA,95,NA,NA,NA,"submitter29","pipeline59"
-"submitter11_12S_12SAllFishDez2023_pipeline10","12S","12SAllFishDez2023","12SAllFishDez2023","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA,NA,"submitter11","pipeline10"
-"submitter11_COI_COIMetazoaSep2024_pipeline10","COI","COIMetazoaSep2024","COIMetazoa","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA,NA,"submitter11","pipeline10"
-"submitter16_12S_12SAllFishDez2023_pipeline77","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_12S_NCBILCABestHit_pipeline77","12S","NCBILCABestHit","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_12S_NCBILCA_pipeline77","12S","NCBILCA","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_16S_16SAllFishDez2023_pipeline77","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_16S_NCBILCABestHit_pipeline77","16S","NCBILCABestHit","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_16S_NCBILCA_pipeline77","16S","NCBILCA","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_COI_COIMetazoa_pipeline77","COI","COIMetazoa","COIMetazoa","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_COI_NCBILCABestHit_pipeline77","COI","NCBILCABestHit","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter16_COI_NCBILCA_pipeline77","COI","NCBILCA","NCBI","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES","ASV table filtered on two parameters. If an ASV is present only in a single sample and only present in that sample at relative abundance < 0.001","submitter16","pipeline77"
-"submitter94_12S_MifishDez2023_pipeline10","12S","MifishDez2023","MifishDez2023","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA,NA,"submitter94","pipeline10"
-"submitter94_12S_mifishdbv3.83_pipeline10","12S","mifishdbv3.83","mifishdbv3.83","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA,NA,"submitter94","pipeline10"
-"submitter62_12S_12SAllFishDez2023_pipeline99","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline99"
-"submitter62_12S_12SAllFishDez2023_pipeline4","12S","12SAllFishDez2023","12SAllFishDez2023","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline4"
-"submitter62_16S_16SAllFishDez2023_pipeline99","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline99"
-"submitter62_16S_16SAllFishDez2023_pipeline4","16S","16SAllFishDez2023","16SAllFishDez2023","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline4"
-"submitter62_COI_COIMetazoaSep2024wormstax_pipeline99","COI","COIMetazoaSep2024wormstax","COIMetazoa","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline99"
-"submitter62_COI_COIMetazoaSep2024wormstax_pipeline4","COI","COIMetazoaSep2024wormstax","COIMetazoa","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES","needleall after blastn for optimum alignment","submitter62","pipeline4"
-"submitter14_12S_12SAllFishDez2023_pipeline77","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES","pre-filter the sequences just to remove those with Ns but perform no other filtering","submitter14","pipeline77"
-"submitter14_16S_16SAllFishDez2023_pipeline77","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES","pre-filter the sequences just to remove those with Ns but perform no other filtering","submitter14","pipeline77"
-"submitter14_COI_COIAllFishDez2023_pipeline77","COI","COIAllFishDez2023","COIAllFishDez2023","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES","pre-filter the sequences just to remove those with Ns but perform no other filtering","submitter14","pipeline77"
-"submitter34_12S_12SAllFishDez2023_pipeline27","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES","outlier detection odseq, rarefaction 5000","submitter34","pipeline27"
-"submitter34_16S_16SAllFishDez2023_pipeline27","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES","outlier detection odseq, rarefaction 5000","submitter34","pipeline27"
-"submitter34_COI_COIMetazoa_pipeline27","COI","COIMetazoa","COIMetazoa","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES","outlier detection odseq, rarefaction 5000","submitter34","pipeline27"
-"submitter26_12S_nt_pipeline87","12S","nt","nt","dada2","ASV","sequence similarity","blastn",80,NA,90,"LCA",NA,"","submitter26","pipeline87"
-"submitter26_16S_nt_pipeline87","16S","nt","nt","dada2","ASV","sequence similarity","blastn",80,NA,90,"LCA",NA,"","submitter26","pipeline87"
-"submitter44_COI_BOLD_pipeline95","COI","BOLD","BOLD","usearch","ASV","sequence similarity","blastn",NA,NA,NA,NA,NA,"kraken used for database filtering?","submitter44","pipeline95"
-"submitter50_12S_12SAllFishDez2023_pipeline94","12S","12SAllFishDez2023","12SAllFishDez2023","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA,"","submitter50","pipeline94"
-"submitter50_16S_16SAllFishDez2023_pipeline94","16S","16SAllFishDez2023","16SAllFishDez2023","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA,"","submitter50","pipeline94"
-"submitter50_COI_COIMetazoa_pipeline94","COI","COIMetazoa","COIMetazoa","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA,"","submitter50","pipeline94"
-"submitter87_COI_MIDORI2_pipeline11","COI","MIDORI2","MIDORI2","vsearch","OTU","sequence similarity","BOLDIGGER3",97,NA,NA,"LULU",NA,"","submitter87","pipeline11"
-"submitter87_COI_MIDORI2_pipeline31","COI","MIDORI2","MIDORI2","vsearch","OTU","sequence similarity","BOLDIGGER3",97,NA,NA,"LULU","YES","Filtered results manually to get final list?","submitter87","pipeline31"
-"submitter95_COI_COIMetazoaSep2024wormstax_pipeline14","COI","COIMetazoaSep2024wormstax","COIMetazoa","mothur","OTU","sequence composition","mothur",0.7,NA,NA,NA,NA,NA,"submitter95","pipeline14"
-"submitter1_12S_12SAllFishDez2023_pipeline37","12S","12SAllFishDez2023","12SAllFishDez2023","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES","Manually curated","submitter1","pipeline37"
-"submitter1_16S_16SAllFishDez2023_pipeline37","16S","16SAllFishDez2023","16SAllFishDez2023","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES","Manually curated","submitter1","pipeline37"
-"submitter1_COI_COIMetazoa_pipeline37","COI","COIMetazoa","COIMetazoa","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES","Manually curated","submitter1","pipeline37"
-"submitter1_12S_12SAllFishDez2023_pipeline32","12S","12SAllFishDez2023","12SAllFishDez2023","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA,NA,"submitter1","pipeline32"
-"submitter1_16S_16SAllFishDez2023_pipeline32","16S","16SAllFishDez2023","16SAllFishDez2023","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA,NA,"submitter1","pipeline32"
-"submitter1_COI_COIMetazoa_pipeline32","COI","COIMetazoa","COIMetazoa","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA,NA,"submitter1","pipeline32"
-"submitter75_12S_12SAllFishDez2023_pipeline63","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter75","pipeline63"
-"submitter75_12S_12SMifishncbint_pipeline63","12S","12SMifishncbint","12SMifishncbint","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter75","pipeline63"
-"submitter75_16S_16SAllFishDez2023_pipeline63","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter75","pipeline63"
-"submitter75_16S_16S-ncbi_pipeline63","16S","16S-ncbi","NCBI","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter75","pipeline63"
-"submitter75_COI_COINCBInt_pipeline63","COI","COINCBInt","COINCBInt","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter75","pipeline63"
-"submitter75_12S_12SCRABSCustom_pipeline29","12S","12SCRABSCustom","NCBI","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_12S_12SAllFishDez2023_pipeline29","12S","12SAllFishDez2023","12SAllFishDez2023","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_12S_TerrimporterFish_pipeline29","12S","TerrimporterFish","TerrimporterFish","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_12S_TerrimporterVert_pipeline29","12S","TerrimporterVert","TerrimporterVert","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_12S_12SCRABSCustom_pipeline33","12S","12SCRABSCustom","NCBI","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_12S_12SAllFishDez2023_pipeline33","12S","12SAllFishDez2023","12SAllFishDez2023","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_12S_TerrimporterFish_pipeline33","12S","TerrimporterFish","TerrimporterFish","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_12S_TerrimporterVert_pipeline33","12S","TerrimporterVert","TerrimporterVert","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_16S_16SCRABSCustom_pipeline29","16S","16SCRABSCustom","NCBI","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_16S_16SAllFishDez2023_pipeline29","16S","16SAllFishDez2023","16SAllFishDez2023","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_16S_16SCRABSCustom_pipeline33","16S","16SCRABSCustom","NCBI","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_16S_16SAllFishDez2023_pipeline33","16S","16SAllFishDez2023","16SAllFishDez2023","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_COI_COICRABSCustom_pipeline29","COI","COICRABSCustom","NCBI","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline29"
-"submitter75_COI_COICRABSCustom_pipeline67","COI","COICRABSCustom","NCBI","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,"YES","pseudogene removal","submitter75","pipeline67"
-"submitter75_COI_COICRABSCustom_pipeline33","COI","COICRABSCustom","NCBI","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA,NA,"submitter75","pipeline33"
-"submitter75_COI_COICRABSCustom_pipeline46","COI","COICRABSCustom","NCBI","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,"YES","pseudogene removal","submitter75","pipeline46"
-"submitter35_COI_CRUXcustom_pipeline77","COI","CRUXcustom","CRUXcustom","dada2","ASV","other","bowtie2-blca",NA,NA,NA,"BLCA",NA,NA,"submitter35","pipeline77"
-"submitter28_12S_12SAllFishDez2023_pipeline44","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA,NA,"submitter28","pipeline44"
-"submitter28_12S_12SAllFishDez2023_pipeline50","12S","12SAllFishDez2023","12SAllFishDez2023","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA,NA,"submitter28","pipeline50"
-"submitter28_16S_16SAllFishDez2023_pipeline44","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA,NA,"submitter28","pipeline44"
-"submitter28_16S_16SAllFishDez2023_pipeline50","16S","16SAllFishDez2023","16SAllFishDez2023","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA,NA,"submitter28","pipeline50"
-"submitter28_16S_COIMetazoa_pipeline44","16S","COIMetazoa","COIMetazoa","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA,NA,"submitter28","pipeline44"
-"submitter28_COI_COIMetazoa_pipeline50","COI","COIMetazoa","COIMetazoa","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA,NA,"submitter28","pipeline50"
-"submitter48_12S_12SAllFishDez2023_pipeline86","12S","12SAllFishDez2023","12SAllFishDez2023","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA,NA,"submitter48","pipeline86"
-"submitter48_12S_NCBI_pipeline86","12S","NCBI","NCBI","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA,NA,"submitter48","pipeline86"
-"submitter48_16S_16SAllFishDez2023_pipeline86","16S","16SAllFishDez2023","16SAllFishDez2023","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA,NA,"submitter48","pipeline86"
-"submitter48_16S_NCBI_pipeline86","16S","NCBI","NCBI","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA,NA,"submitter48","pipeline86"
-"submitter48_COI_COIMetazoaSep2024wormstax_pipeline86","COI","COIMetazoaSep2024wormstax","COIMetazoa","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA,NA,"submitter48","pipeline86"
-"submitter43_16S_16SAllFishDez2023_pipeline61","16S","16SAllFishDez2023","16SAllFishDez2023","vsearch","OTU","sequence composition","rdp",0.8,NA,NA,NA,NA,NA,"submitter43","pipeline61"
-"submitter58_COI_COIMetazoa_pipeline16","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline16"
-"submitter58_COI_COIMetazoa_pipeline92","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline92"
-"submitter58_COI_COIMetazoa_pipeline69","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline69"
-"submitter58_COI_COIMetazoa_pipeline52","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline52"
-"submitter58_COI_COIMetazoa_pipeline58","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline58"
-"submitter58_COI_COIMetazoa_pipeline71","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline71"
-"submitter58_COI_COIMetazoa_pipeline49","COI","COIMetazoa","COIMetazoa","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA,NA,"submitter58","pipeline49"
+"submissionID","submitterID","marker","referenceDB","referenceDB_simplified","pipeline","error_rate_tool","ASV.OTU","tax_assign_cat","otu_seq_comp_appr","tax_class_id_cutoff","tax_class_evalue","tax_class_query_cutoff","tax_class_collapse","screen_other"
+"submitter66_12S_12SAllFishDez2023_minderoo","submitter66","12S","12SAllFishDez2023","12SAllFishDez2023","minderoo","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES"
+"submitter66_16S_16SAllFishDez2023_minderoo","submitter66","16S","16SAllFishDez2023","16SAllFishDez2023","minderoo","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES"
+"submitter66_COI_COIMetazoa_minderoo","submitter66","COI","COIMetazoa","COIMetazoa","minderoo","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES"
+"submitter66_COI_COIAllFishDez2023_minderoo","submitter66","COI","COIAllFishDez2023","COIAllFishDez2023","minderoo","dada2","ASV","sequence similarity","blastn",NA,0.001,100,"LCA","YES"
+"submitter37_12S_12SAllFishDez2023_cascabel","submitter37","12S","12SAllFishDez2023","12SAllFishDez2023","cascabel","other","OTU","sequence similarity","vsearch",80,NA,NA,"LCA","YES"
+"submitter37_16S_16SAllFishDez2023_cascabel","submitter37","16S","16SAllFishDez2023","16SAllFishDez2023","cascabel","dada2","ASV","sequence composition","dada2",0.6,NA,NA,NA,"YES"
+"submitter45_12S_12SAllFishDez2023_MLI","submitter45","12S","12SAllFishDez2023","12SAllFishDez2023","MLI","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES"
+"submitter45_COI_COIAllFishDez2023_MLI","submitter45","COI","COIAllFishDez2023","COIAllFishDez2023","MLI","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES"
+"submitter45_16S_NCBI_MLI","submitter45","16S","NCBI","NCBI","MLI","dada2","ASV","sequence similarity","blastn",95,1e-50,95,"LCA","YES"
+"submitter60_12S_12SAllFishDez2023_OBITools","submitter60","12S","12SAllFishDez2023","12SAllFishDez2023","OBITools","fastp","OTU","sequence similarity","ecotag",NA,NA,NA,NA,NA
+"submitter60_16S_16SAllFishDez2023_OBITools","submitter60","16S","16SAllFishDez2023","16SAllFishDez2023","OBITools","fastp","OTU","sequence similarity","ecotag",NA,NA,NA,NA,NA
+"submitter17_12S_12SAllFishDez2023_ApscaleModified","submitter17","12S","12SAllFishDez2023","12SAllFishDez2023","ApscaleModified","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA
+"submitter17_COI_BOLD_ApscaleModified","submitter17","COI","BOLD","BOLD","ApscaleModified","DnoisE","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA
+"submitter17_16S_16SAllFishDez2023_ApscaleModified","submitter17","16S","16SAllFishDez2023","16SAllFishDez2023","ApscaleModified","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA
+"submitter17_12S_12SAllFishDez2023MIDORI2_ApscaleModified","submitter17","12S","12SAllFishDez2023MIDORI2","12SAllFishDez2023MIDORI2","ApscaleModified","vsearch","ASV","sequence composition","vsearch sintax",0.75,NA,NA,"LULU",NA
+"submitter32_12S_12SAllFishDez2023_QIIME2v.2023.5","submitter32","12S","12SAllFishDez2023","12SAllFishDez2023","QIIME2v.2023.5","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA
+"submitter32_16S_16SAllFishDez2023_QIIME2v.2023.5","submitter32","16S","16SAllFishDez2023","16SAllFishDez2023","QIIME2v.2023.5","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA
+"submitter32_COI_COIAllFishDez2023_QIIME2v.2023.5","submitter32","COI","COIAllFishDez2023","COIAllFishDez2023","QIIME2v.2023.5","dada2","ASV","sequence composition","qiime2",0.7,NA,NA,NA,NA
+"submitter29_COI_COIAllFishDez2023_nf-coreAmpliseq","submitter29","COI","COIAllFishDez2023","COIAllFishDez2023","nf-coreAmpliseq","dada2","ASV","sequence similarity","blastn",97,NA,95,NA,NA
+"submitter29_12S_12SAllFishDez2023_nf-coreAmpliseq","submitter29","12S","12SAllFishDez2023","16SAllFishDez2023","nf-coreAmpliseq","dada2","ASV","sequence similarity","blastn",97,NA,95,NA,NA
+"submitter11_12S_12SAllFishDez2023_MiFish","submitter11","12S","12SAllFishDez2023","12SAllFishDez2023","MiFish","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA
+"submitter11_COI_COIMetazoaSep2024_MiFish","submitter11","COI","COIMetazoaSep2024","COIMetazoa","MiFish","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA
+"submitter16_12S_12SAllFishDez2023_DADA2","submitter16","12S","12SAllFishDez2023","12SAllFishDez2023","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_12S_NCBILCABestHit_DADA2","submitter16","12S","NCBILCABestHit","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_12S_NCBILCA_DADA2","submitter16","12S","NCBILCA","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_16S_16SAllFishDez2023_DADA2","submitter16","16S","16SAllFishDez2023","16SAllFishDez2023","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_16S_NCBILCABestHit_DADA2","submitter16","16S","NCBILCABestHit","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_16S_NCBILCA_DADA2","submitter16","16S","NCBILCA","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_COI_COIMetazoa_DADA2","submitter16","COI","COIMetazoa","COIMetazoa","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_COI_NCBILCABestHit_DADA2","submitter16","COI","NCBILCABestHit","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter16_COI_NCBILCA_DADA2","submitter16","COI","NCBILCA","NCBI","DADA2","dada2","ASV","sequence similarity","blastn",96,1e-05,50,"LCA","YES"
+"submitter94_12S_MifishDez2023_MiFish","submitter94","12S","MifishDez2023","MifishDez2023","MiFish","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA
+"submitter94_12S_mifishdbv3.83_MiFish","submitter94","12S","mifishdbv3.83","mifishdbv3.83","MiFish","other","OTU","sequence similarity","blastn",97,NA,NA,NA,NA
+"submitter62_12S_12SAllFishDez2023_frogsDADA2","submitter62","12S","12SAllFishDez2023","12SAllFishDez2023","frogsDADA2","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter62_12S_12SAllFishDez2023_frogsSWARM","submitter62","12S","12SAllFishDez2023","12SAllFishDez2023","frogsSWARM","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter62_16S_16SAllFishDez2023_frogsDADA2","submitter62","16S","16SAllFishDez2023","16SAllFishDez2023","frogsDADA2","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter62_16S_16SAllFishDez2023_frogsSWARM","submitter62","16S","16SAllFishDez2023","16SAllFishDez2023","frogsSWARM","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter62_COI_COIMetazoaSep2024wormstax_frogsDADA2","submitter62","COI","COIMetazoaSep2024wormstax","COIMetazoa","frogsDADA2","dada2","ASV","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter62_COI_COIMetazoaSep2024wormstax_frogsSWARM","submitter62","COI","COIMetazoaSep2024wormstax","COIMetazoa","frogsSWARM","swarm","OTU","sequence similarity","blastn",NA,NA,NA,NA,"YES"
+"submitter14_12S_12SAllFishDez2023_DADA2","submitter14","12S","12SAllFishDez2023","12SAllFishDez2023","DADA2","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES"
+"submitter14_16S_16SAllFishDez2023_DADA2","submitter14","16S","16SAllFishDez2023","16SAllFishDez2023","DADA2","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES"
+"submitter14_COI_COIAllFishDez2023_DADA2","submitter14","COI","COIAllFishDez2023","COIAllFishDez2023","DADA2","dada2","ASV","sequence composition","dada2",0.8,NA,NA,NA,"YES"
+"submitter34_12S_12SAllFishDez2023_tourmaline","submitter34","12S","12SAllFishDez2023","12SAllFishDez2023","tourmaline","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES"
+"submitter34_16S_16SAllFishDez2023_tourmaline","submitter34","16S","16SAllFishDez2023","16SAllFishDez2023","tourmaline","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES"
+"submitter34_COI_COIMetazoa_tourmaline","submitter34","COI","COIMetazoa","COIMetazoa","tourmaline","dada2","ASV","sequence composition","qiime2",NA,NA,NA,NA,"YES"
+"submitter26_12S_nt_MetaBarFlow","submitter26","12S","nt","nt","MetaBarFlow","dada2","ASV","sequence similarity","blastn",80,NA,90,"LCA",NA
+"submitter26_16S_nt_MetaBarFlow","submitter26","16S","nt","nt","MetaBarFlow","dada2","ASV","sequence similarity","blastn",80,NA,90,"LCA",NA
+"submitter44_COI_BOLD_UNOISE3metaMATE","submitter44","COI","BOLD","BOLD","UNOISE3metaMATE","usearch","ASV","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter50_12S_12SAllFishDez2023_rainbowbridge","submitter50","12S","12SAllFishDez2023","12SAllFishDez2023","rainbowbridge","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA
+"submitter50_16S_16SAllFishDez2023_rainbowbridge","submitter50","16S","16SAllFishDez2023","16SAllFishDez2023","rainbowbridge","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA
+"submitter50_COI_COIMetazoa_rainbowbridge","submitter50","COI","COIMetazoa","COIMetazoa","rainbowbridge","vsearch","OTU","sequence similarity","blastn",75,0.001,90,"LCA",NA
+"submitter87_COI_MIDORI2_APSCALE","submitter87","COI","MIDORI2","MIDORI2","APSCALE","vsearch","OTU","sequence similarity","BOLDIGGER3",97,NA,NA,"LULU",NA
+"submitter87_COI_MIDORI2_APSCALEwithCuration","submitter87","COI","MIDORI2","MIDORI2","APSCALEwithCuration","vsearch","OTU","sequence similarity","BOLDIGGER3",97,NA,NA,"LULU","YES"
+"submitter95_COI_COIMetazoaSep2024wormstax_In-house","submitter95","COI","COIMetazoaSep2024wormstax","COIMetazoa","In-house","mothur","OTU","sequence composition","mothur",0.7,NA,NA,NA,NA
+"submitter1_12S_12SAllFishDez2023_pMiFishcurated","submitter1","12S","12SAllFishDez2023","12SAllFishDez2023","pMiFishcurated","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES"
+"submitter1_16S_16SAllFishDez2023_pMiFishcurated","submitter1","16S","16SAllFishDez2023","16SAllFishDez2023","pMiFishcurated","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES"
+"submitter1_COI_COIMetazoa_pMiFishcurated","submitter1","COI","COIMetazoa","COIMetazoa","pMiFishcurated","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,"YES"
+"submitter1_12S_12SAllFishDez2023_pMiFishnoCuration","submitter1","12S","12SAllFishDez2023","12SAllFishDez2023","pMiFishnoCuration","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA
+"submitter1_16S_16SAllFishDez2023_pMiFishnoCuration","submitter1","16S","16SAllFishDez2023","16SAllFishDez2023","pMiFishnoCuration","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA
+"submitter1_COI_COIMetazoa_pMiFishnoCuration","submitter1","COI","COIMetazoa","COIMetazoa","pMiFishnoCuration","usearch","OTU","sequence similarity","usearch",80,NA,NA,NA,NA
+"submitter75_12S_12SAllFishDez2023_PacMAN","submitter75","12S","12SAllFishDez2023","12SAllFishDez2023","PacMAN","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter75_12S_12SMifishncbint_PacMAN","submitter75","12S","12SMifishncbint","12SMifishncbint","PacMAN","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter75_16S_16SAllFishDez2023_PacMAN","submitter75","16S","16SAllFishDez2023","16SAllFishDez2023","PacMAN","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter75_16S_16S-ncbi_PacMAN","submitter75","16S","16S-ncbi","NCBI","PacMAN","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter75_COI_COINCBInt_PacMAN","submitter75","COI","COINCBInt","COINCBInt","PacMAN","dada2","ASV","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter75_12S_12SCRABSCustom_MetaWorksASV","submitter75","12S","12SCRABSCustom","NCBI","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_12SAllFishDez2023_MetaWorksASV","submitter75","12S","12SAllFishDez2023","12SAllFishDez2023","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_TerrimporterFish_MetaWorksASV","submitter75","12S","TerrimporterFish","TerrimporterFish","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_TerrimporterVert_MetaWorksASV","submitter75","12S","TerrimporterVert","TerrimporterVert","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_12SCRABSCustom_MetaWorksOTU","submitter75","12S","12SCRABSCustom","NCBI","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_12SAllFishDez2023_MetaWorksOTU","submitter75","12S","12SAllFishDez2023","12SAllFishDez2023","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_TerrimporterFish_MetaWorksOTU","submitter75","12S","TerrimporterFish","TerrimporterFish","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_12S_TerrimporterVert_MetaWorksOTU","submitter75","12S","TerrimporterVert","TerrimporterVert","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_16S_16SCRABSCustom_MetaWorksASV","submitter75","16S","16SCRABSCustom","NCBI","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_16S_16SAllFishDez2023_MetaWorksASV","submitter75","16S","16SAllFishDez2023","16SAllFishDez2023","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_16S_16SCRABSCustom_MetaWorksOTU","submitter75","16S","16SCRABSCustom","NCBI","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_16S_16SAllFishDez2023_MetaWorksOTU","submitter75","16S","16SAllFishDez2023","16SAllFishDez2023","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_COI_COICRABSCustom_MetaWorksASV","submitter75","COI","COICRABSCustom","NCBI","MetaWorksASV","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_COI_COICRABSCustom_MetaWorksASVPseudogenefiltering","submitter75","COI","COICRABSCustom","NCBI","MetaWorksASVPseudogenefiltering","vsearch","ASV","sequence composition","rdp",NA,NA,NA,NA,"YES"
+"submitter75_COI_COICRABSCustom_MetaWorksOTU","submitter75","COI","COICRABSCustom","NCBI","MetaWorksOTU","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,NA
+"submitter75_COI_COICRABSCustom_MetaWorksOTUPseudogenefiltering","submitter75","COI","COICRABSCustom","NCBI","MetaWorksOTUPseudogenefiltering","vsearch","OTU","sequence composition","rdp",NA,NA,NA,NA,"YES"
+"submitter35_COI_CRUXcustom_DADA2","submitter35","COI","CRUXcustom","CRUXcustom","DADA2","dada2","ASV","other","bowtie2-blca",NA,NA,NA,"BLCA",NA
+"submitter28_12S_12SAllFishDez2023_PipeCraft2 DADA2 ASV","submitter28","12S","12SAllFishDez2023","12SAllFishDez2023","PipeCraft2 DADA2 ASV","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA
+"submitter28_12S_12SAllFishDez2023_PipeCraft2 DADA2 OTU","submitter28","12S","12SAllFishDez2023","12SAllFishDez2023","PipeCraft2 DADA2 OTU","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA
+"submitter28_16S_16SAllFishDez2023_PipeCraft2 DADA2 ASV","submitter28","16S","16SAllFishDez2023","16SAllFishDez2023","PipeCraft2 DADA2 ASV","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA
+"submitter28_16S_16SAllFishDez2023_PipeCraft2 DADA2 OTU","submitter28","16S","16SAllFishDez2023","16SAllFishDez2023","PipeCraft2 DADA2 OTU","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA
+"submitter28_16S_COIMetazoa_PipeCraft2 DADA2 ASV","submitter28","16S","COIMetazoa","COIMetazoa","PipeCraft2 DADA2 ASV","dada2","ASV","sequence similarity","blastn",NA,0.001,NA,NA,NA
+"submitter28_COI_COIMetazoa_PipeCraft2 DADA2 OTU","submitter28","COI","COIMetazoa","COIMetazoa","PipeCraft2 DADA2 OTU","dada2","OTU","sequence similarity","blastn",NA,0.001,NA,"LULU",NA
+"submitter48_12S_12SAllFishDez2023_SEED2","submitter48","12S","12SAllFishDez2023","12SAllFishDez2023","SEED2","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter48_12S_NCBI_SEED2","submitter48","12S","NCBI","NCBI","SEED2","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter48_16S_16SAllFishDez2023_SEED2","submitter48","16S","16SAllFishDez2023","16SAllFishDez2023","SEED2","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter48_16S_NCBI_SEED2","submitter48","16S","NCBI","NCBI","SEED2","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter48_COI_COIMetazoaSep2024wormstax_SEED2","submitter48","COI","COIMetazoaSep2024wormstax","COIMetazoa","SEED2","SEED2","OTU","sequence similarity","blastn",NA,NA,NA,NA,NA
+"submitter43_16S_16SAllFishDez2023_inhousepipeline","submitter43","16S","16SAllFishDez2023","16SAllFishDez2023","inhousepipeline","vsearch","OTU","sequence composition","rdp",0.8,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa100","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa100","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa40","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa40","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa50","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa50","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa60","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa60","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa80","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa80","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa90","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa90","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
+"submitter58_COI_COIMetazoa_Anacapa95","submitter58","COI","COIMetazoa","COIMetazoa","Anacapa95","dada2","ASV","other","bowtie2-blca",NA,NA,NA,NA,NA
