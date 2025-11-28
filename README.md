@@ -1,3 +1,6 @@
+![status](https://img.shields.io/badge/Status-ongoing-lightgreen)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17739996.svg)](https://doi.org/10.5281/zenodo.17739996)
+
 
 <img src="https://www.eu4oceanobs.eu/wp-content/uploads/2023/03/MARCO-BOLO_logo_col.png" alt="drawing" width="500" align="center"/>
 </p>
