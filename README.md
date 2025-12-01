@@ -7,7 +7,7 @@
 
 # The Marco-Bolo eDNA Data Analysis Challenge
 
-The [EU Horizon MARCO-BOLO project](https://marcobolo-project.eu/)  launched the [Data Analysis Challenge](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/) to survey the global environmental DNA (eDNA) community about their use and development of bioinformatics pipelines to process eDNA samples, as well as invite them to contribute their time and methodology towards an extensive comparison of these pipelines. Registered participants were invited to download any of the four metabarcoding datasets provided, analyse these with their pipeline, and provide back the output ASV/OTU and taxonomy tables for comparison. In total, 14 participants submitted a total of 18 output datasets for the [18S protist observatory dataset](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#plankton-18s-time-series), and 25 participants submitted a total of 101 output dataset for the [12S, 16S and COI fish aquarium datasets](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#fish-12s16scoi-aquarium-dataset). The resulting tables were harmonised to be analysed conjointly, and bioinformatics parameters were extracted from the different results files we received. 
+The [EU Horizon MARCO-BOLO project](https://marcobolo-project.eu/)  launched the [Data Analysis Challenge](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/) to survey the global environmental DNA (eDNA) community about their use and development of bioinformatics pipelines to process eDNA samples, as well as invite them to contribute their time and methodology towards an extensive comparison of these pipelines. Registered participants were invited to download any of the four metabarcoding datasets provided, analyse these with their pipeline, and provide back the output ASV/OTU and taxonomy tables for comparison. In total, 14 participants submitted a total of 18 output datasets for the [18S protist observatory dataset](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#plankton-18s-time-series) (Caracciolo *et al.* 2022), and 25 participants submitted a total of 101 output dataset for the [12S, 16S and COI fish aquarium datasets](https://github.com/marco-bolo/wp2-wp5-workshop/tree/main/?tab=readme-ov-file#fish-12s16scoi-aquarium-dataset). The resulting tables were harmonised to be analysed conjointly, and bioinformatics parameters were extracted from the different results files we received. 
 
 The current (v0.1) Zenodo data submission [doi:10.5281/zenodo.17739996](https://doi.org/10.5281/zenodo.17739996) consists of the harmonised tables of participant outputs, the extracted bioinformatics metadata, and several supplementary files necessary for analyses.
 
@@ -44,7 +44,7 @@ Finally this folder contains supplementary data necessary to reproduce analyses:
 
 :file_folder: &nbsp;[**scripts/**](https://github.com/marco-bolo/data-analysis-challenge/tree/master/scripts):
  contains R scripts to reproduce comparative analyses and figures.
- 
+
 :file_folder: &nbsp;[**figures/**](https://github.com/marco-bolo/data-analysis-challenge/tree/master/figures):
  produced figures (.png) will be saved to this folder
 
