@@ -52,7 +52,7 @@ Finally this folder contains supplementary data necessary to reproduce analyses:
 
 ### For the fish 12S, 16S and COI entries:
 
- - Alpha diversity indices: (target) species richness, (target) Shannon diversity. Here, only species assigned to the class Actinoptery, Teleostei, Chondrichthyes and Elasmobranchii were taken into account.
+ - Alpha diversity indices: (target) species richness, (target) Shannon diversity. Here, only species assigned to the class Actinopterygii, Teleostei, Chondrichthyes and Elasmobranchii were taken into account.
     
     ![Richness](figures/12s16sCOI/targetSpecies_boxplot_richness-pipeline.png)
 - Detectability: Target species identification, sensitivity of detections compared to the aquarium species list.
