@@ -44,6 +44,7 @@ Finally this folder contains supplementary data necessary to reproduce analyses:
 
 :file_folder: &nbsp;[**scripts/**](https://github.com/marco-bolo/data-analysis-challenge/tree/master/scripts):
  contains R scripts to reproduce comparative analyses and figures.
+ 
 :file_folder: &nbsp;[**figures/**](https://github.com/marco-bolo/data-analysis-challenge/tree/master/figures):
  produced figures (.png) will be saved to this folder
 
