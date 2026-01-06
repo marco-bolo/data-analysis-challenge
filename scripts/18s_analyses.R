@@ -417,7 +417,7 @@ nmds_pipeline / (nmds_season + nmds_year) +
 # here, run separate NMDS analyses for each pipeline and plot them together
 
 # first, split by submissionID
-split_list <- diversity_df_merged %>%
+split_list <- diversity_df_18s %>%
   group_split(submissionID)
 
 ### Bray-Curtis dissimilarity ----
@@ -440,7 +440,7 @@ nmds_list <- map(split_list, function(df) {
 
 # combine results into one df and add metadata
 nmds_split_bray <- bind_rows(nmds_list) %>% 
-  left_join(metadata_18s_merged, by = "sampleID")
+  left_join(metadata_18s_samples, by = "sampleID")
 
 # plot seasonal and yearly patterns
 
@@ -457,7 +457,7 @@ nmds_split_bray_season
 nmds_split_bray_year <- ggplot(nmds_split_bray, aes(NMDS1, NMDS2, color = year)) +
   geom_point(size = 3) +
   facet_wrap(.~pipeline, scales = "free") +
-  scale_color_gradient(breaks = unique(nmds_all$year)) +
+  scale_color_gradient(breaks = unique(nmds_split_bray$year)) +
   theme_ordination() +
   labs(x = "NMDS1", y = "NMDS2", color = "Year") 
 nmds_split_bray_year
@@ -484,7 +484,7 @@ nmds_list_jacc <- map(split_list, function(df) {
 
 # combine results into one df and add metadata
 nmds_split_jacc <- bind_rows(nmds_list_jacc) %>% 
-  left_join(metadata_18s_merged, by = "sampleID")
+  left_join(metadata_18s_samples, by = "sampleID")
 
 
 nmds_jacc_season <- ggplot(nmds_split_jacc, aes(NMDS1, NMDS2, color = season)) +
@@ -501,7 +501,7 @@ nmds_jacc_season
 nmds_jacc_year <- ggplot(nmds_split_jacc, aes(NMDS1, NMDS2, color = year)) +
   geom_point(size = 3) +
   facet_wrap(.~pipeline, scales = "free") +
-  scale_color_gradient(breaks = unique(nmds_all$year)) +
+  scale_color_gradient(breaks = unique(nmds_split_jacc$year)) +
   theme_ordination() +
   labs(x = "NMDS1", y = "NMDS2", color = "Year", title = "NMDS on presence-absence matrix with Jaccard distance") 
 nmds_jacc_year
