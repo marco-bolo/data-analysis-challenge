@@ -1,6 +1,10 @@
 data/challengedata_12s16sCOI.csv
-
-
-
+data/challengedata_18s.csv
+data/intermediate_nmds_18s.RData
+*.DS_Store
+scripts/.Rhistory
 scripts.Rproj
 .Rproj.user
+
+
+.gitignore
