@@ -55,11 +55,11 @@ theme_ordination <- function() {
 ## calculate diversity indices ----
 
 # work at the "species" level
-
+# first produce a species x site matrix for diversity calculation
 diversity_df_18s <- challengedata_18s_merged %>%
-  filter(!is.na(species)) %>% 
+  filter(!is.na(species) & species != "") %>% # some empty species strings otherwise cause problems
   pivot_longer(cols = starts_with("RA"), names_to = "sampleID", values_to = "readAbundance") %>%
-  mutate(readAbundance = ifelse(is.na(readAbundance), 0, readAbundance)) %>%  # replace NA readabundance by zero
+  mutate(readAbundance = ifelse(is.na(readAbundance), 0, readAbundance)) %>%  # replace NA readAbundance by zero but keep all samples
   group_by(submissionID, submitterID, marker, referenceDB, pipeline, sampleID, species) %>%
   # pool duplicate species assignments 
   summarise(abundance = sum(readAbundance), .groups = "drop") %>%
@@ -72,6 +72,9 @@ diversity_df_18s <- challengedata_18s_merged %>%
   ungroup() 
 colnames(diversity_df_18s)
 
+# measure diversity numbers on the diversity matrix
+
+## separateley for metabarcoding results
 diversity_numbers_metab <- diversity_df_18s %>% 
   # only work on 18s data to not skew results because different samples
   filter(marker == "18S",
@@ -92,6 +95,7 @@ diversity_numbers_metab <- diversity_df_18s %>%
       ))} %>% # close code block
   left_join( ., metadata_18s_samples, by = "sampleID")
 
+## separately for microscopy results
 diversity_numbers_micros <- diversity_df_18s %>% 
   # only work on microscopy data this time
   filter(marker == "morphology",
@@ -328,7 +332,7 @@ pGAM_hill15 <- diversity_numbers_merged %>%
   theme(legend.position = "none") +
   ggtitle("ASTAN 18S Time Series \nGAM fit + SE across pipelines and microscopy data")
 pGAM_hill15
-#ggsave("../figures/18s/plankton_timeseries_gam_hillq15.pngg", width = 8.79, height = 7.5)
+#ggsave("../figures/18s/plankton_timeseries_gam_hillq15.png", width = 8.79, height = 7.5)
 
 
 # Community composition ----
@@ -349,17 +353,22 @@ pa_mat[pa_mat>0] <- 1
 ### apply NMDS 
 
 # with Bray-Curtis dissimilarity
-nmds_bray <- metaMDS(relabundance_hellinger, distance = "bray", k = 2, trymax = 100)  # this will take some time, approx. 30-60 minutes
+nmds_bray <- metaMDS(relabundance_hellinger, distance = "bray", k = 2, trymax = 100)  # this will take some time, approx. 60-80 minutes
+# temporary export
+
 # with Jaccard distance
 nmds_jacc <- metaMDS(pa_mat, distance = "jaccard", k = 2, trymax = 100)
 
 # check stress
-nmds_bray$stress #  0.1173421
-nmds_jacc$stress #  0.07106681
+nmds_bray$stress #  0.1198466
+nmds_jacc$stress #  0.07030733
+
+# export nmds files
+#save(nmds_bray, nmds_jacc, file = "../data/intermediate_nmds_18s.RData")
 
 # Extract plotting coordinates
 nmds <- nmds_bray               # here define nmds_jacc for the jaccard nmds plots. be mindful to also change the plotting lables and figure export names to jaccard instead of bray
-nmds_df <- data.frame(diversity_df_18s[!empty_rows,1:5], NMDS1 = nmds$points[,1], NMDS2 = nmds$points[,2]) %>% 
+nmds_df <- data.frame(diversity_df_18s[!empty_rows,1:6], NMDS1 = nmds$points[,1], NMDS2 = nmds$points[,2]) %>% 
   left_join(metadata_18s_samples)
 
 # define label locations
@@ -371,13 +380,16 @@ center_labels <- nmds_df %>%
 # plot 
 nmds_pipeline <- ggplot(nmds_df, aes(x = NMDS1, y = NMDS2, color = pipeline)) +
   geom_point(size = 3) +
-  scale_color_manual(values = palette, guide = guide_legend(ncol = 1)) +
+  scale_color_manual(values = palette_shannon, guide = guide_legend(ncol = 1)) +
   geom_label_repel(data = center_labels,
                    aes(x = NMDS1, y = NMDS2, label = pipeline, color = pipeline),
                    hjust = 1, size = 3, show.legend = FALSE,
-                   max.overlaps = 20,
+                   max.overlaps = 30,
                    direction = "both", nudge_x = 0.2, nudge_y = 0.2, #fontface = "bold",
                    segment.color = "grey50") +
+  annotate(geom = "text", label = paste0("Stress = ", round(nmds$stress,5)),
+           x = -2.9, y = -3.5, hjust = 1, vjust = 1) +    # for Bray-Curtis
+ #          x = -7.5, y = -13.5, hjust = 1, vjust = 1) +    # for Jaccard
   theme_ordination() +
   theme(legend.position = "none") +
   labs(x = "NMDS1", y = "NMDS2")
@@ -387,11 +399,6 @@ nmds_season <- ggplot(nmds_df, aes(x = NMDS1, y = NMDS2, color = season)) +
   scale_color_manual(values = c("Winter" = "blue", "Spring" = "green","Summer" = "orange","Autumn" = "brown")) +
   theme_ordination() +
   labs(x = "NMDS1", y = "NMDS2")
-
-nmds_submitter <- ggplot(nmds_df, aes(x = NMDS1, y = NMDS2, color = submitterID)) +
-  geom_point(size = 3) +
-  theme_ordination() +
-  labs(title = "NMDS (Hellinger & Bray-Curtis)", x = "NMDS1", y = "NMDS2")
 
 nmds_year <- ggplot(nmds_df, aes(x = NMDS1, y = NMDS2, color = year)) +
   geom_point(size = 3) +
