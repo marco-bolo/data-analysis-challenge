@@ -21,7 +21,16 @@ library(viridis)
 
 # import data 
 
+# if working on csv file
 challengedata_18s <- read.csv(file = "../data/challengedata_18s.csv", row.names = 1) %>% 
+  mutate(submitterID = str_split_fixed(.$submissionID, '_', 4)[,1]) %>% 
+  mutate(marker =  str_split_fixed(.$submissionID, '_', 4)[,2]) %>% 
+  mutate(referenceDB =  str_split_fixed(.$submissionID, '_', 4)[,3]) %>% 
+  mutate(pipeline =  str_split_fixed(.$submissionID, '_', 4)[,4]) %>% 
+  select(submissionID, submitterID, marker, referenceDB, pipeline, everything())
+
+# if working on rds file
+challengedata_18s <- readRDS(file = "../data/challengedata_18s.rds") %>% 
   mutate(submitterID = str_split_fixed(.$submissionID, '_', 4)[,1]) %>% 
   mutate(marker =  str_split_fixed(.$submissionID, '_', 4)[,2]) %>% 
   mutate(referenceDB =  str_split_fixed(.$submissionID, '_', 4)[,3]) %>% 
@@ -495,7 +504,7 @@ nmds_jacc_season <- ggplot(nmds_split_jacc, aes(NMDS1, NMDS2, color = season)) +
   theme_ordination() +
   labs(x = "NMDS1", y = "NMDS2", title = "NMDS on presence-absence matrix with Jaccard distance") 
 nmds_jacc_season
-#ggsave(file = "figures/plankton_nmds_jacc-season.png", width = 12, height = 10)
+#ggsave(file = "../figures/18s/plankton_nmds_jacc-season.png", width = 12, height = 10)
 
 
 nmds_jacc_year <- ggplot(nmds_split_jacc, aes(NMDS1, NMDS2, color = year)) +
@@ -505,6 +514,6 @@ nmds_jacc_year <- ggplot(nmds_split_jacc, aes(NMDS1, NMDS2, color = year)) +
   theme_ordination() +
   labs(x = "NMDS1", y = "NMDS2", color = "Year", title = "NMDS on presence-absence matrix with Jaccard distance") 
 nmds_jacc_year
-#ggsave(file = "figures/plankton_nmds_jacc-year.png", width = 12, height = 10)
+#ggsave(file = "../figures/18s/plankton_nmds_jacc-year.png", width = 12, height = 10)
 
 

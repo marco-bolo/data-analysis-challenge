@@ -12,7 +12,15 @@ library(vegan)
 library(hillR)
 
 ## load data
+
+# if working on csv file
 challengedata_12s16sCOI <- read.csv(file = "../data/challengedata_12s16sCOI.csv", row.names = 1) %>% 
+  mutate(readAbundance = as.numeric(readAbundance)) %>% 
+  rename(submitterID = submitterID_anon) %>% 
+  filter(!(pipeline %in% c("Anacapa40", "Anacapa50", "Anacapa60", "Anacapa80", "Anacapa90"))) # Only keep thresholds 95 and 100 for the Anacapa pipeline
+
+# if working on rds file
+challengedata_12s16sCOI <- readRDS(file = "../data/challengedata_12s16sCOI.rds") %>% 
   mutate(readAbundance = as.numeric(readAbundance)) %>% 
   rename(submitterID = submitterID_anon) %>% 
   filter(!(pipeline %in% c("Anacapa40", "Anacapa50", "Anacapa60", "Anacapa80", "Anacapa90"))) # Only keep thresholds 95 and 100 for the Anacapa pipeline

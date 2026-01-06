@@ -24,9 +24,9 @@ This repository is structured as follow:
  
  This folder contains the resulting output tables from each participant, harmonised and merged by target group (protists or fish): 
 
-- challengedata_12s16sCOI.csv: The 101 harmonised output datasets analyzing the fish metabarcoding data from the Lisbon aquarium.
+- challengedata_12s16sCOI.rds: The 101 harmonised output datasets analyzing the fish metabarcoding data from the Lisbon aquarium. The data is given as an R object (.rds) to comply to github size limitations, and should be read with the function readRDS().
 
-- challengadata_18s.csv: The harmonised output datasets analyzing the protist time series from the ASTAN observatory. Due to storage limitations, the participant output data contains 9 out of 18 submissions for the 18s metabarcoding dataset. The remaining datasets will be added by the end of December 2025.
+- challengadata_18s.rds: The harmonised output datasets analyzing the protist time series from the ASTAN observatory. The data is given as an R object (.rds) to comply to github size limitations, and should be read with the function readRDS().
 
 Key bioinformatic steps and parameters were extracted for each of the submissions included in the challenge data. 
 -	metadata_18s.csv: bioinformatics metadata accompanying the challengedata_18s.csv
